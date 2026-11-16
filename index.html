@@ -3,17 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>websiteho — 무료 온라인 도구</title>
-  <meta name="description" content="설치 없이 쓰는 무료 온라인 도구 모음. 바코드 생성기 · QR코드 생성기." />
-  <meta http-equiv="refresh" content="0; url=/barcode-qr-maker/" />
-  <link rel="canonical" href="https://websiteho.github.io/barcode-qr-maker/" />
+  <title>websiteho 바코드 생성기 - 무료 바코드 · QR코드 만들기</title>
+  <meta name="description" content="회원가입·설치 없이 무료로 바코드와 QR코드를 만들고 출력하세요. EAN-13 상품 바코드, CODE128, 투명 바코드, 와이파이 QR코드까지." />
+  <link rel="canonical" href="https://websiteho.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:site_name" content="websiteho 바코드 생성기" />
+  <meta property="og:url" content="https://websiteho.github.io/" />
+  <meta property="og:title" content="websiteho 바코드 생성기 - 무료 바코드 · QR코드 만들기" />
+  <meta property="og:description" content="회원가입·설치 없이 무료로 바코드와 QR코드를 만들고 출력하세요." />
+
+  <!-- 검색 결과 아이콘(파비콘): 구글은 이 홈페이지에 적힌 아이콘만 사용 -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- 검색 결과 사이트 이름 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "websiteho 바코드 생성기",
+    "alternateName": ["바코드 생성기", "websiteho"],
+    "url": "https://websiteho.github.io/"
+  }
+  </script>
   <style>
-    body { font-family: "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; text-align: center; padding: 60px 16px; color: #1d2433; }
-    a { color: #2f6bff; font-size: 18px; }
+    :root { --ink: #1d2433; --muted: #6b7385; --line: #e2e6ef; --brand: #2f6bff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif; background: #f4f6fb; color: var(--ink); }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+    header { text-align: center; margin-bottom: 28px; }
+    header img { width: 56px; height: 56px; }
+    h1 { font-size: 26px; margin: 12px 0 6px; letter-spacing: -0.4px; }
+    header p { margin: 0; color: var(--muted); }
+    .cta { display: block; text-align: center; margin: 24px auto 32px; max-width: 320px; padding: 14px 0; border-radius: 12px;
+           background: var(--brand); color: #fff; font-weight: 700; text-decoration: none; font-size: 17px; }
+    h2 { font-size: 15px; margin: 0 0 10px; }
+    ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+    li a { display: block; padding: 12px 14px; background: #fff; border: 1px solid var(--line); border-radius: 10px; color: var(--ink); text-decoration: none; }
+    li a:hover { border-color: var(--brand); color: var(--brand); }
+    li small { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+    footer { text-align: center; color: var(--muted); font-size: 12px; margin-top: 36px; }
   </style>
 </head>
 <body>
-  <h1>websiteho</h1>
-  <p><a href="/barcode-qr-maker/">바코드 생성기 · QR코드 생성기로 이동 →</a></p>
+  <div class="wrap">
+    <header>
+      <img src="/favicon.svg" alt="" />
+      <h1>websiteho 바코드 생성기</h1>
+      <p>회원가입·설치 없이 무료로 바코드와 QR코드를 만들고 출력하세요.</p>
+    </header>
+
+    <a class="cta" href="/barcode-qr-maker/">바코드 만들기 시작 →</a>
+
+    <h2>도구 바로가기</h2>
+    <ul>
+      <li><a href="/barcode-qr-maker/">바코드 생성기<small>CODE128 · EAN-13 등 바코드 만들기</small></a></li>
+      <li><a href="/barcode-qr-maker/barcode-print/">바코드 출력 · 인쇄<small>무료 바코드 인쇄, 한 장에 최대 3개</small></a></li>
+      <li><a href="/barcode-qr-maker/ean13/">EAN-13 상품 바코드<small>880 국내 상품 바코드</small></a></li>
+      <li><a href="/barcode-qr-maker/code128/">CODE128 바코드<small>재고 · 물류 · 송장</small></a></li>
+      <li><a href="/barcode-qr-maker/code39/">CODE39 바코드<small>자산관리 · 비품 라벨</small></a></li>
+      <li><a href="/barcode-qr-maker/itf14/">ITF-14 박스 바코드<small>박스 · 물류 단위</small></a></li>
+      <li><a href="/barcode-qr-maker/upc/">UPC 바코드<small>미국 수출 · 아마존</small></a></li>
+      <li><a href="/barcode-qr-maker/barcode-image/">바코드 이미지 저장<small>PNG · SVG 다운로드</small></a></li>
+      <li><a href="/barcode-qr-maker/transparent-barcode/">투명 바코드<small>배경 없는 바코드 만들기</small></a></li>
+      <li><a href="/barcode-qr-maker/qr-code/">QR코드 생성기<small>링크 · 글자 QR코드</small></a></li>
+      <li><a href="/barcode-qr-maker/qr-print/">QR코드 인쇄<small>무료 QR 출력</small></a></li>
+      <li><a href="/barcode-qr-maker/wifi-qr/">와이파이 QR코드<small>찍으면 바로 연결</small></a></li>
+    </ul>
+
+    <footer>입력한 내용은 서버로 전송되지 않고 내 브라우저 안에서만 처리됩니다.</footer>
+  </div>
 </body>
 </html>
